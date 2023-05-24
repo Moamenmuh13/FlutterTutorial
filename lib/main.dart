@@ -1,20 +1,18 @@
-import 'package:first_app/home_screen.dart';
-import 'package:first_app/login_screen.dart';
-import 'package:first_app/messenger_screen.dart';
+import 'package:first_app/counter_screen.dart';
 import 'package:flutter/material.dart';
 
-import 'messenger_screen_online.dart';
-
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-        home:MessengerScreenOnline());
+    // ignore: prefer_const_constructors
+    return  MaterialApp(
+        debugShowCheckedModeBanner: false, home: CounterScreen());
   }
 }
